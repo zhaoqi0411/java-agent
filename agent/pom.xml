@@ -15,9 +15,13 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
+
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+
                     <archive>
                         <!--自动添加META-INF/MANIFEST.MF -->
                         <manifest>
@@ -39,7 +43,6 @@
                     <target>6</target>
                 </configuration>
             </plugin>
-
         </plugins>
 
 

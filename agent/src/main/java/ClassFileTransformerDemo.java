@@ -30,9 +30,7 @@ public class ClassFileTransformerDemo implements ClassFileTransformer {
         }
 
 
-        System.out.println("?????");
         try {
-            System.out.println("dsdddd");
             //借助JavaAssist工具，进行字节码插桩
             ClassPool pool = ClassPool.getDefault();
 
